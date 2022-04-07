@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Student grade Calculation</title>
+</head>
+
+<body>
+    <div class="bg-teal-500 w-full h-screen flex items-center">
+        <div class="bg-gray-700 rounded-xl flex items-center shadow mx-auto flex-row">
+            <div class="flex flex-col w-full items-center">
+                <div class="flex w-full justify-between p-10">
+                    <div class="flex items-center w-1/4 ml-10">
+                        <hr class="bg-teal-500 h-32 w-1.5 mr-2 rounded-lg">
+                        <h1 class="text-teal-500 font-extrabold text-3xl break-normal uppercase animate-bounce">Student
+                            Grade CalCy</h1>
+                    </div>
+
+                    <div class="flex flex-col space-y-5">
+                        <input id="web"
+                            class="bg-gray-700 text-white placeholder:text-white font-semibold outline-none border-b-2 border-gray-400 py-1 uppercase"
+                            type="number" placeholder="Web Programing">
+                        <input id="math"
+                            class="bg-gray-700 text-white placeholder:text-white font-semibold outline-none border-b-2 border-gray-400 py-1 uppercase"
+                            type="number" placeholder="Maths">
+                        <input id="computer"
+                            class="bg-gray-700 text-white placeholder:text-white font-semibold outline-none border-b-2 border-gray-400 py-1 uppercase"
+                            type="number" placeholder="Computer">
+                        <input id="phy"
+                            class="bg-gray-700 text-white placeholder:text-white font-semibold outline-none border-b-2 border-gray-400 py-1 uppercase"
+                            type="number" placeholder="Physics">
+                        <button id="calculate_percentage"
+                            class="text-teal-500 uppercase font-semibold
+                        border-opacity-60 hover:text-white bg-white rounded shadow h-8 hover:bg-teal-500 border-b-4 border-teal-500 hover:border-white">Show
+                            Percentage</button>
+                    </div>
+                </div>
+                <p class="text-white font-semibold text-xl pb-2 w-3/4 " id='show_result'></p>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/calculation.js"></script>
+</body>
+
+</html>
